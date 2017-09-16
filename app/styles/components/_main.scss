@@ -1,0 +1,101 @@
+#header {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  background: $quanzhiGreen;
+  color: white;
+  z-index: 9999;
+  box-shadow: 0.5px 5px 10px #C7C7C7;
+
+  #app-icon {
+    img {
+      width: 60px;
+    }
+  }
+
+  a {
+    border: 2px white solid;
+    box-shadow: 1px 1px 10px #6F6F6F;
+    background: white;
+    border-radius: 10px;
+    color: $quanzhiGreen;
+    font-weight: bold;
+    font-size: 110%rem;
+    margin-right: 100px;
+    padding: 10px;
+
+  }
+}
+
+#title {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#title-description {
+  font-size: 90%;
+}
+
+.header-left {
+  padding: 10px;
+  padding-left: 100px;
+  float: left;
+  width: auto;
+  .header-left-1 {
+    float: left;
+  }
+  .header-left-2 {
+    margin-top: 7px;
+    margin-left: 10px;
+    float: right;
+  }
+}
+
+.header-right {
+  float: right;
+  width: auto;
+  line-height: 80px;
+  text-align: center;
+  .fa {
+      font-size: 110%;
+  }
+}
+
+#body {
+  padding-top: 80px;
+  min-height: 91vh;
+}
+
+#footer {
+  background: $quanzhiGreen;
+  color: white;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+
+@media(max-width: 640px) {
+  #header {
+    a {
+      margin-right: 20px;
+    }
+  }
+
+  .header-left {
+    padding-left: 10px;    
+    .header-left-2 {
+      margin-top: 7px;
+      margin-left: 10px;
+    }
+  }
+
+  .header-right {
+    line-height: 80px;
+  }
+
+  #footer {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
