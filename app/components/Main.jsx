@@ -6,8 +6,8 @@ export class Main extends React.Component {
       <div id="wrapper">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         
-        <div id="header" className="">
-          <nav className="">
+        <div id="header">
+          <nav>
             <div className="header-left">
               <div className="header-left-1">
                 <div id="app-icon"><img id="app-icon" src="http://i1.mobile-dad.com/uploads/201707/510046_1_1501155121MEUH.png" alt="app-icon"/></div>
@@ -24,11 +24,11 @@ export class Main extends React.Component {
           </nav>
         </div>
 
-        <div id="body" className="">
+        <div id="body">
           {React.cloneElement(this.props.children, this.props)}
         </div>
 
-        <div id="footer" className="">
+        <div id="footer">
           <strong>火花社 © 2017</strong>
         </div>
       </div>
