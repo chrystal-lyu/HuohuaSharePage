@@ -227,7 +227,6 @@ ul {
 }
 
 .featured-pages {
-  // border: 1px solid #ebebf0;
   padding: 0 10px;  
   a {
     color: #444;
@@ -268,6 +267,9 @@ ul {
         font-size: 120%;
         font-weight: bold;
       }
+      p {
+        margin-top: 0;
+      }
     }
 
     .post-info {
@@ -282,7 +284,7 @@ ul {
   }
 }
 
-@media(max-width: 640px) {
+@media(max-width: 900px) {
   .featured-pages {
     .featured-page-content{
       padding: 0;
@@ -332,3 +334,35 @@ ul {
   }
 }
 
+@media(max-width: 640px) {
+  .featured-pages .featured-page-content .featured-text {
+    h5 {
+      width: 250px;
+    }
+    p {
+      width: 300px;
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .featured-pages .featured-page-content .featured-text {
+    h5 {
+      width: 180px;
+    }
+    p {
+      width: 250px;
+    }
+  }
+}
+
+@media(max-width: 370px) {
+  .featured-pages .featured-page-content .featured-text {
+    h5 {
+      width: 130px;
+    }
+    p {
+      width: 180px;
+    }
+  }
+}

@@ -3,6 +3,13 @@ import moment from 'moment';
 
 export class Post extends React.Component {
   render () {
+		const renderPopularAbstract = () => {
+			let popularAbstract = "Aenean ultricies turpis est, non elementum mauris porttitor vel. Cras pellentesque lobortis odio a ultrices. Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis. ";			
+			if (popularAbstract.length > 100) {
+				return popularAbstract = popularAbstract.substring(0, 100) + "...";
+				console.log(popularAbstract);
+			}
+		}
     return (
       <div className="row">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -84,8 +91,8 @@ export class Post extends React.Component {
 									<image className="avatar" src="http://imgcache.qq.com/music/photo/album_300/17/300_albumpic_8217_0.jpg"/>
 								</div>
 								<div className="featured-text">
-									<div className="featured-title"><h5>Switch you fav color with Smiley</h5></div>
-									<div className="featured-abstract"><p>Aenean ultricies turpis est, non elementum mauris porttitor vel. Cras pellentesque lobortis odio a ultrices. Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis. </p></div>
+									<h5>Switch you fav color with Smiley</h5><br/>
+									<p>{renderPopularAbstract()}</p>
 								</div>
 								<div className="post-info">
 									<span className="num-comments"><span className="fa">&#xf0e5;</span> 43</span><span className="num-likes"><span className="fa">&#xf08a;</span> 1234</span>
@@ -100,7 +107,7 @@ export class Post extends React.Component {
 									<image className="avatar" src="https://media.tenor.com/images/b3570952aaae135cb2acafe68d03e276/tenor.gif"/>
 								</div>
 								<div className="featured-text">
-									<h5>My Trip to Chinatown</h5>
+									<h5>My Trip to Chinatown</h5><br/>
 									<p>Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis. </p>
 								</div>
 								<div className="post-info">
@@ -116,7 +123,7 @@ export class Post extends React.Component {
 									<image className="avatar" src="https://365cpop.files.wordpress.com/2013/03/jay-chou-opus-12-shou-yu.jpg"/>
 								</div>
 								<div className="featured-text">
-									<h5>Secret</h5>
+									<h5>Secret</h5><br/>
 									<p>Cras pellentesque lobortis odio a ultrices. Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis.</p>
 								</div>
 								<div className="post-info">
@@ -132,8 +139,8 @@ export class Post extends React.Component {
 									<image className="avatar" src="http://orig09.deviantart.net/9665/f/2013/182/c/f/jay_chou___big_ben_mv_by_fierlovesjay-d6bkb9c.gif"/>
 								</div>
 								<div className="featured-text">
-									<h5>Fairytale-like wedding</h5>
-									<p>Eon elementum mauris porttitor vel. Cras pellentesque lobortis odio a ultrices. Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis.</p>
+									<h5>Fairytale-like wedding</h5><br/>
+									<p>{renderPopularAbstract()}</p>
 								</div>
 								<div className="post-info">
 									<span className="num-comments"><span className="fa">&#xf0e5;</span> 163</span><span className="num-likes"><span className="fa">&#xf08a;</span> 1034</span>

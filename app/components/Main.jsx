@@ -29,7 +29,7 @@ export class Main extends React.Component {
         </div>
 
         <div id="footer">
-          <strong>火花社 © 2017</strong>
+          <strong>全职高手x火花社 © 2017</strong>
         </div>
       </div>
     )
