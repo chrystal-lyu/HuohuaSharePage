@@ -18,7 +18,7 @@ export class Post extends React.Component {
 						<div className="user-icon"><a href="#"><img className="avatar" src="http://img.ecyss.com/medium/172/172609/dc852b721bc841da.gif"/></a></div>
 						<div className="user-info">	
 							<div className="user-name"><a href="#">糖糖</a></div>
-							<div className="user-rep">2002 声望</div>
+							<div className="user-rep">9999 声望</div>
 						</div>
 						<div className="post-info">
 							<div className="post-date">8天前</div>
