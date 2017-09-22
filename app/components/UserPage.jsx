@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Sidebar from 'Sidebar';
+
 export class UserPage extends React.Component {
   render() {
     return (
@@ -15,22 +17,22 @@ export class UserPage extends React.Component {
                 <div className="user-icon">
                   <img className="avatar" src="http://tu.dd321.com/dianyingpu/tuji/ZhiQingChun2JiaoYuanRePaiXueShengChuZuYa202609.jpg"/>
                 </div>
-                <div className="user-name">I_LOVE_JAY</div>
-                <div className="membership">Community Member</div>
-                <div className="since-date">Since Oct 2016 (290 Days)</div>
+                <div className="user-name">糖糖</div>
+                <div className="membership">火花社成员</div>
+                <div className="since-date">2016年10月入社 (290天)</div>
               </div>
               <div className="counter-info">
                 <div className="counter-rep">
                   <div className="number">289</div>
-                  <div className="counter-label">Reputation</div>
+                  <div className="counter-label">声望</div>
                 </div>
                 <div className="counter-followers">
                   <div className="number">3450</div>
-                  <div className="counter-label">Followers</div>
+                  <div className="counter-label">粉丝</div>
                 </div>
                 <div className="counter-following">
                   <div className="number">1802</div>
-                  <div className="counter-label">Following</div>
+                  <div className="counter-label">关注</div>
                 </div>
               </div>
             </div>
@@ -54,7 +56,64 @@ export class UserPage extends React.Component {
                 <li><a><img className="avatar" src="https://s-media-cache-ak0.pinimg.com/originals/2f/87/85/2f878550077af0f839dcca4b598bcd6f.gif"/></a></li>
               </ul>
             </div>
-            <div className="section-header">Short Bio</div>
+
+            <div className="section-header">个人介绍</div>
+
+            <div>我是一枚小透明</div>
+
+            <div className="section-header">糖糖的帖子</div>
+
+            <div className="user-post-wrapper">
+
+              <a className="user-post">
+                <div className="user-post-content">
+                  <div className="post-image">
+                    <image className="gallery" src="https://farm6.staticflickr.com/5278/14365150535_6556a083d8_o.jpg"/>
+                  </div>
+                  <div className="post-text">
+                    <h5>第一百五十二章 龍套變關鍵</h5>
+                    <p>他來前已經是做好心理準備的，畢竟是能踩著大公會刷記錄的隊伍，那水平還用說嗎？楓樺一點也不懷疑...</p>
+                  </div>
+                  <div className="post-info">
+                    <span className="num-comments"><span className="fa">&#xf0e5;</span> 43</span>
+                    <span className="num-likes"><span className="fa">&#xf08a;</span> 1234</span>
+                  </div>
+                </div>
+              </a>
+
+              <a className="user-post">
+                <div className="user-post-content">
+                  <div className="post-image">
+                    <image className="gallery" src="http://livedoor.blogimg.jp/onecall_dazeee/imgs/7/e/7e9c5507.png"/>
+                  </div>
+                  <div className="post-text">
+                    <h5>第一百五十六章 包圍之勢</h5>
+                    <p>“哈哈哈，菜鳥不要這么緊張啊這才打了多一會，你老是OTOT的叫個不停，難道你是OTMAN嗎？”包子入侵又是大笑飄過...</p>
+                  </div>
+                  <div className="post-info">
+                    <span className="num-comments"><span className="fa">&#xf0e5;</span> 43</span>
+                    <span className="num-likes"><span className="fa">&#xf08a;</span> 1234</span>
+                  </div>
+                </div>
+              </a>
+
+              <a className="user-post">
+                <div className="user-post-content">
+                  <div className="post-image">
+                    <image className="gallery" src="https://i.pinimg.com/originals/44/cd/64/44cd641e49e62fe584807c24dbfa39aa.png"/>
+                  </div>
+                  <div className="post-text">
+                    <h5>第一百六十章 技多不壓身</h5>
+                    <p>在公會里，他是老大，他是頭。下副本他是領導，他是指揮，他說東就沒人敢向西...</p>
+                  </div>
+                  <div className="post-info">
+                    <span className="num-comments"><span className="fa">&#xf0e5;</span> 43</span>
+                    <span className="num-likes"><span className="fa">&#xf08a;</span> 1234</span>
+                  </div>
+                </div>
+              </a>
+
+            </div>
 
           </div>
 
@@ -62,7 +121,7 @@ export class UserPage extends React.Component {
         </div>
 
 
-
+        <Sidebar />
 
 			</div>
 		)
