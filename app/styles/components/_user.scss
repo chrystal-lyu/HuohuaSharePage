@@ -124,7 +124,7 @@
   .user-post-content {
     height: 180px;
     position: relative;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 0 15px 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #ebebf0;
     .post-image {
@@ -151,7 +151,7 @@
       font-size: 100%;
       position: absolute;
       top: 15px;
-      right: 20px;
+      right: 0;
       .num-likes {
           padding-left: 10px;
       }
@@ -160,20 +160,28 @@
 }
 
 @media(max-width: 900px) {
-  .user-post-wrapper .user-post-content .post-text {
-    h5 {
-      font-size: 110%;
-      font-weight: bold;
-    }
-    p {
+  .user-post-wrapper .user-post-content {
+    .post-text {
+      h5 {
+        font-size: 110%;
+        font-weight: bold;
+      }
+      p {
+        font-size: 100%;
+        width: 300px;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+      }
+    }   
+    .post-info{
       font-size: 100%;
-      width: 300px;
-      display: inline-block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; 
+      position: absolute;
+      top: 15px;
+      right: 0;
     }
-  }    
+  }
 }
 
 @media(max-width: 640px) {
@@ -215,7 +223,7 @@
         }
         p {
           font-size: 80%;
-          width: 200px;
+          width: 250px;
           display: inline-block;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -227,7 +235,7 @@
         font-size: 100%;
         position: absolute;
         top: 15px;
-        right: 20px;
+        right: 0;
         .num-likes {
             padding-left: 10px;
         }
