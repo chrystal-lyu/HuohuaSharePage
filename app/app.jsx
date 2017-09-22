@@ -4,6 +4,7 @@ import {Route, Router, IndexRoute, hashHistory} from 'react-router';
 
 import Main from 'Main';
 import Post from 'Post';
+import UserPage from 'UserPage';
 
 // Load foundation
 $(document).foundation();
@@ -15,6 +16,7 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={Post}/>
+      <Route path="users" component={UserPage}/>
     </Route>
   </Router>,
   document.getElementById('app')

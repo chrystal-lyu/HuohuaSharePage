@@ -1,5 +1,7 @@
 import React from 'react';
 import moment from 'moment';
+import { Link } from 'react-router';
+
 
 export class Post extends React.Component {
   render () {
@@ -17,7 +19,7 @@ export class Post extends React.Component {
 					<div className="user">
 						<div className="user-icon"><a href="#"><img className="avatar" src="http://img.ecyss.com/medium/172/172609/dc852b721bc841da.gif"/></a></div>
 						<div className="user-info">	
-							<div className="user-name"><a href="#">糖糖</a></div>
+							<div className="user-name"><Link to="/users">糖糖</Link></div>
 							<div className="user-rep">9999 声望</div>
 						</div>
 						<div className="post-info">
@@ -47,7 +49,7 @@ export class Post extends React.Component {
 								<div className="comment-body">	
 									<div className="comment-header">
 										<a className="user-link">I'm Nick Name</a>
-										<div className="comment-info"><span className="comment-date">5 分钟前</span><span className="comment-likes"><span className="fa">&#xf08a;</span> 3</span></div>
+										<div className="comment-info"><span className="comment-date">5 分钟前</span></div>
 									</div>
 									<div className="comment-content">老板娘生日快乐！</div>
 									<div className="sub-comments-wrapper">
@@ -58,7 +60,7 @@ export class Post extends React.Component {
 													<div className="comment-body">	
 														<div className="comment-header">
 															<a className="user-link">Jay</a>
-															<div className="comment-info"><span className="comment-date">3 分钟前</span><span className="comment-likes"><span className="fa">&#xf08a;</span> 1</span></div>
+															<div className="comment-info"><span className="comment-date">3 分钟前</span></div>
 														</div>
 														<div className="comment-content">祝祝祝！！！</div>
 													</div>
@@ -68,7 +70,7 @@ export class Post extends React.Component {
 													<div className="comment-body">	
 														<div className="comment-header">
 															<a className="user-link">Crystal</a>
-															<div className="comment-info"><span className="comment-date">1 分钟前</span><span className="comment-likes"><span className="fa">&#xf08a;</span> 0</span></div>
+															<div className="comment-info"><span className="comment-date">1 分钟前</span></div>
 														</div>
 														<div className="comment-content">Vestibulum mattis lacus id mauris dictum, non faucibus libero iaculis. </div>
 													</div>
