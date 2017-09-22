@@ -5,9 +5,15 @@
   position: relative;
   height: 560px;
   .user-cover {
-    
-    .user-cover-img {
-      background-color: rgba(255,255,255,0.5);
+    .layer {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .user-cover-img {      
       position: absolute;
       height: 100%;
       width: auto;
@@ -20,10 +26,11 @@
     margin: 26% auto;
     text-align: center;
     .user-icon .avatar{
+      object-fit: cover;            
       display: inline-block;
       width: 150px;
       height: 150px;
-      border: 2px solid rgba(255,255,255,0.5);
+      border: 2px solid rgba(255, 255, 255, 0.67);
       border-radius: 50%;
     }
     .user-name {
@@ -79,6 +86,8 @@
 .member-container {
   background-color: white;
   .members {
+    margin-left: 10px;
+    margin-right: 10px;
     .avatar{
       object-fit: cover;
       display: inline-block;
@@ -98,6 +107,10 @@
     display: block;
     clear: both;
   }
+}
+
+.user-bio {
+  margin-left: 10px;
 }
 
 .user-post-wrapper {
@@ -143,5 +156,95 @@
           padding-left: 10px;
       }
     }
+  }
+}
+
+@media(max-width: 900px) {
+  .user-post-wrapper .user-post-content .post-text {
+    h5 {
+      font-size: 110%;
+      font-weight: bold;
+    }
+    p {
+      font-size: 100%;
+      width: 300px;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; 
+    }
+  }    
+}
+
+@media(max-width: 640px) {
+  .user-info {
+    height: 400px;
+    .user-profile {
+      .user-icon .avatar{
+        width: 100px;
+        height: 100px;
+      }
+      .user-name {
+        font-size: 120%;
+      }
+      .membership {
+        font-size: 100%;
+      }
+      .since-date {
+        font-size: 100%;
+      }
+    }
+  }
+  .user-post-wrapper {
+    .user-post-content {
+      height: auto;
+      .post-image {
+        .gallery {
+          object-fit: cover;
+          height: 80px;
+          width: 80px;
+          position: absolute;
+        }
+      }
+
+      .post-text {
+        margin: 0 110px 0 90px;
+        h5 {
+          font-size: 100%;
+          font-weight: bold;
+        }
+        p {
+          font-size: 80%;
+          width: 200px;
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; 
+        }
+      }
+
+      .post-info {
+        font-size: 100%;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        .num-likes {
+            padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 370px) {
+  .user-post-wrapper .user-post-content 
+  .post-text {
+    width: 150px;
+    p {
+      width: 150px;
+    }
+  }
+  .post-info {
+    visibility: hidden;
   }
 }

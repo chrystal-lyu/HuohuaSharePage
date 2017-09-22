@@ -25,7 +25,7 @@ export class Post extends React.Component {
 						</div>
 						<div className="post-info">
 							<div className="post-date">8天前</div>
-							<div className="post-likes"><span className="fa">&#xf004;</span>167</div>
+							<div className="post-likes"><span className="fa">&#xf004;</span> 167</div>
 						</div>
 					</div>
 

@@ -11,11 +11,12 @@ export class UserPage extends React.Component {
           <div className="user-page">
             <div className="user-info">
               <div className="user-cover">
-                <img className="user-cover-img" src="https://images.gr-assets.com/hostedimages/1471872902ra/20117824.gif"/>
+                <img className="user-cover-img" src="https://1.bp.blogspot.com/-W6usU6rTHNg/WUfhr9ZsACI/AAAAAAAACJE/15jRNUBQdZYJTVfYbYWsbnBhi9OAedUIACPcBGAYYCw/s1600/JLJK.jpg"/>
+                <div className="layer"></div>
               </div>
               <div className="user-profile">
                 <div className="user-icon">
-                  <img className="avatar" src="http://tu.dd321.com/dianyingpu/tuji/ZhiQingChun2JiaoYuanRePaiXueShengChuZuYa202609.jpg"/>
+                  <img className="avatar" src="http://img.ecyss.com/medium/172/172609/dc852b721bc841da.gif"/>
                 </div>
                 <div className="user-name">糖糖</div>
                 <div className="membership">火花社成员</div>
@@ -37,7 +38,7 @@ export class UserPage extends React.Component {
               </div>
             </div>
             <div className="member-container">
-              <div className="section-header">Recent Followers</div>
+              <div className="section-header">近期粉丝</div>
               <ul className="members">
                 <li><a><img className="avatar" src="http://orig09.deviantart.net/9665/f/2013/182/c/f/jay_chou___big_ben_mv_by_fierlovesjay-d6bkb9c.gif"/></a></li>
                 <li><a><img className="avatar" src="https://s-media-cache-ak0.pinimg.com/originals/2f/87/85/2f878550077af0f839dcca4b598bcd6f.gif"/></a></li>
@@ -59,7 +60,7 @@ export class UserPage extends React.Component {
 
             <div className="section-header">个人介绍</div>
 
-            <div>我是一枚小透明</div>
+            <div className="user-bio">我是一枚小透明</div>
 
             <div className="section-header">糖糖的帖子</div>
 
